@@ -243,10 +243,6 @@
   #undef NL_AURORA
   #undef NL_CLOUD_SHADOW
   #undef NL_GROUND_RAIN_PUDDLES
-  #undef NL_CLOUD_TYPE
-  #define NL_CLOUD_TYPE 1
-  #undef NL_CLOUD1_DENSITY
-  #define NL_CLOUD1_DENSITY 0.5
 #endif
 
 #ifdef LITE
