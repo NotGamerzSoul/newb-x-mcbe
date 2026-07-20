@@ -229,6 +229,26 @@
   Build tool will enable corresponding flags when compiling.
 */
 
+#ifdef CINEMATIC_LITE
+  #undef NL_GLOW_SHIMMER
+  #undef NL_LAVA_NOISE
+  #undef NL_WEATHER_SPECK
+  #undef NL_SHOOTING_STAR
+  #undef NL_CLOUD_AURORA_REFLECTION
+  #undef NL_UNDERWATER_STREAKS
+  #undef NL_RAIN_MIST_OPACITY
+  #undef NL_CLOUDY_FOG
+  #undef NL_ENTITY_EDGE_HIGHLIGHT
+  #undef NL_RAINBOW
+  #undef NL_AURORA
+  #undef NL_CLOUD_SHADOW
+  #undef NL_GROUND_RAIN_PUDDLES
+  #undef NL_CLOUD_TYPE
+  #define NL_CLOUD_TYPE 1
+  #undef NL_CLOUD1_DENSITY
+  #define NL_CLOUD1_DENSITY 0.5
+#endif
+
 #ifdef LITE
   #define NO_WAVE
   #undef NL_GLOW_SHIMMER
